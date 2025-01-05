@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header className="flex items-center justify-between px-8 py-4 shadow-md bg-white relative z-50">
       {/* Logo Section */}
-      <div className="text-primary font-bold text-xl italic">
+      <div className="text-black font-bold text-xl italic">
         Conquer Codes
       </div>
 
@@ -142,14 +142,14 @@ const Navbar = () => {
       )}
 
       {/* Call to Action */}
-      <div className="hidden md:block">
+      {/* <div className="hidden md:block">
         <Link
           href="/get-in-touch"
           className="bg-primary text-white px-4 py-2 rounded-full font-medium hover:bg-orange-700 transition-colors"
         >
           GET IN TOUCH
         </Link>
-      </div>
+      </div> */}
 
       {/* Overlay for Sidebar */}
       {isOpen && (

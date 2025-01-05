@@ -21,6 +21,26 @@ const services = [
     description: "Implementing secure and transparent blockchain solutions.",
     image: "https://img.freepik.com/free-vector/server-room-rack-blockchain-technology-token-api-access-data-center_39422-442.jpg?t=st=1736014357~exp=1736017957~hmac=5f818b76db0dce465f231af3b27b522c95936d1892c1fdbeb536304d30c905a2&w=826",
   },
+  {
+    title: "Comprehensive Data Services",
+    description: "Delivering data analytics and management solutions for informed decision-making.",
+    image: "https://img.freepik.com/free-vector/data-analysis-isometric-illustration-concept_52683-72421.jpg?w=740&t=st=1736014591~exp=1736018191~hmac=a5e0860a6ff664f2fc6ae06d722df57ec09cd409ee9a43993e4ab8ebf19837cc",
+  },
+  {
+    title: "Custom Software",
+    description: "Creating tailored software solutions to meet your unique business requirements.",
+    image: "https://img.freepik.com/free-photo/realistic-software-development-composition-with-view-coding-software-screen-realistic-background_1284-62553.jpg?w=740&t=st=1736014645~exp=1736018245~hmac=9c11deff1b58f7a97f943e93c741260fb0301db8b96cfb4a3162192a1516b015",
+  },
+  {
+    title: "Automation Systems",
+    description: "Streamlining processes with intelligent automation solutions.",
+    image: "https://img.freepik.com/free-vector/isometric-smart-industry-industrial-automation_107791-14855.jpg?w=740&t=st=1736014693~exp=1736018293~hmac=41a22016ae116567495aee4195cbf05601ff3b9ad464c92c1140c55c368a3f48",
+  },
+  {
+    title: "Graphic Designs",
+    description: "Crafting stunning and visually appealing designs for your brand.",
+    image: "https://img.freepik.com/free-vector/creative-team-flat-design-illustration_88138-811.jpg?w=740&t=st=1736014748~exp=1736018348~hmac=866e46551acb9025a9a2600a93de5e80c2f66625b0626378b3f45004fcf4c9c8",
+  },
 ];
 
 const ServiceSection: React.FC = () => {
@@ -33,16 +53,16 @@ const ServiceSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-md "
+            className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-md"
           >
             <img
               src={service.image}
               alt={service.title}
-              className="w-72 h-60 mb-4"
+              className="w-28 h-28 mb-4" // Increased width and height
             />
             <h3 className="text-lg font-semibold text-gray-800">
               {service.title}

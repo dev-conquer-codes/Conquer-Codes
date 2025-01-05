@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ubuntu.variable} antialiased`}>
-      <Navbar/>
+         <Navbar/>
         {children}
       </body>
     </html>

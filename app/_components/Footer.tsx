@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
           {/* Contact Details */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <p className="mb-2">Email: support@conquercodes.com</p>
-            <p>Mobile: +1 (123) 456-7890</p>
+            <p className="mb-2">Email: sonukhairwal@conquercodes.com</p>
+            <p>Mobile: +91 7082690722</p>
           </div>
 
           {/* Social Media Links */}

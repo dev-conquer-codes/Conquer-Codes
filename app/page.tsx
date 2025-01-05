@@ -5,6 +5,9 @@ import ServiceSection from "./_components/ServiceSection";
 import AboutUs from "./_components/AboutUs";
 
 import Footer from "./_components/Footer";
+import MessageFromFounder from "./_components/Message";
+import WhatSetsUsApart from "./_components/WhatSetsUsApart";
+import OurPurpose from "./_components/OurPurpose";
 
 export default function Home() {
   return (
@@ -13,7 +16,9 @@ export default function Home() {
    <HeroSection/>
    <ServiceSection/>
    <AboutUs/>
-
+   <WhatSetsUsApart/>
+   <OurPurpose/>
+<MessageFromFounder/>
    <Footer/>
    </>
   );

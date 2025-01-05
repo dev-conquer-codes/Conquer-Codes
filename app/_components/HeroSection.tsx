@@ -1,6 +1,13 @@
+'use client'
 import React from "react";
 
 const HeroSection: React.FC = () => {
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth',
+    });
+  };
   return (
     <section
       className="relative flex items-center justify-center h-screen bg-cover bg-center bg-white"
@@ -19,8 +26,8 @@ const HeroSection: React.FC = () => {
           Elevate your business with cutting-edge web development, mobile
           applications, and AI solutions.
         </p>
-        <button className="px-6 py-3 bg-primary text-white text-lg rounded-md shadow-md hover:bg-gray-800 transition">
-          Get Started
+        <button onClick={scrollToBottom} className="px-6 py-3 bg-primary text-white text-lg rounded-md shadow-md hover:bg-gray-800 transition">
+          Contact Us
         </button>
       </div>
     </section>
