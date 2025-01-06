@@ -1,13 +1,8 @@
 'use client'
 import React from "react";
-
+import { useRouter } from "next/navigation";
 const HeroSection: React.FC = () => {
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: 'smooth',
-    });
-  };
+const router=useRouter();
   return (
     <section
       className="relative flex items-center justify-center h-screen bg-cover bg-center bg-white"
@@ -26,7 +21,7 @@ const HeroSection: React.FC = () => {
           Elevate your business with cutting-edge web development, mobile
           applications, and AI solutions.
         </p>
-        <button onClick={scrollToBottom} className="px-6 py-3 bg-primary text-white text-lg rounded-md shadow-md hover:bg-gray-800 transition">
+        <button onClick={()=>router.push('/contact')} className="px-6 py-3 bg-primary text-white text-lg rounded-md shadow-md hover:bg-gray-800 transition">
           Contact Us
         </button>
       </div>
