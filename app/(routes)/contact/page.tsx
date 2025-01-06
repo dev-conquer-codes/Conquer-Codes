@@ -29,7 +29,7 @@ const ContactUs: React.FC = () => {
         setStatus("Failed to send the message. Please try again.");
       }
     } catch (error) {
-      setStatus("An error occurred. Please try again later.");
+      setStatus("An error occurred. Please try again later."+error);
     }
   };
 
