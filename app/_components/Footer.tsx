@@ -5,12 +5,41 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Contact Details */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <p className="mb-2">Email: sonukhairwal@conquercodes.com</p>
-            <p>Mobile: +91 7082690722</p>
+            <div className="grid grid-cols-3 gap-2">
+              <div>Emails:</div>
+              <div className="col-span-2">
+                <p>
+                  <a
+                    href="mailto:sonukhairwal@conquercodes.com"
+                    className="text-white hover:underline"
+                  >
+                    sonukhairwal@conquercodes.com
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="mailto:sonuiiitian@gmail.com"
+                    className="text-white hover:underline"
+                  >
+                    sonuiiitian@gmail.com
+                  </a>
+                </p>
+              </div>
+
+              <div>Mobile:</div>
+              <div className="col-span-2">
+                <p>+91 7082690722</p>
+              </div>
+
+              <div>Address:</div>
+              <div className="col-span-2">
+                <p>Akashneem Marg, DLF Phase-2, Gurgaon, Haryana</p>
+              </div>
+            </div>
           </div>
 
           {/* Social Media Links */}
@@ -42,7 +71,7 @@ const Footer: React.FC = () => {
                 <FaInstagram size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/conquer-codes/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-600 transition-colors"

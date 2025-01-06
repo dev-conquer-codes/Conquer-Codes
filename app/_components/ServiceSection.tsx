@@ -27,7 +27,7 @@ const services = [
     image: "https://img.freepik.com/free-vector/data-analysis-isometric-illustration-concept_52683-72421.jpg?w=740&t=st=1736014591~exp=1736018191~hmac=a5e0860a6ff664f2fc6ae06d722df57ec09cd409ee9a43993e4ab8ebf19837cc",
   },
   {
-    title: "Custom Software",
+    title: "Custom Softwares",
     description: "Creating tailored software solutions to meet your unique business requirements.",
     image: "https://img.freepik.com/free-photo/realistic-software-development-composition-with-view-coding-software-screen-realistic-background_1284-62553.jpg?w=740&t=st=1736014645~exp=1736018245~hmac=9c11deff1b58f7a97f943e93c741260fb0301db8b96cfb4a3162192a1516b015",
   },
@@ -39,7 +39,7 @@ const services = [
   {
     title: "Graphic Designs",
     description: "Crafting stunning and visually appealing designs for your brand.",
-    image: "https://img.freepik.com/free-vector/creative-team-flat-design-illustration_88138-811.jpg?w=740&t=st=1736014748~exp=1736018348~hmac=866e46551acb9025a9a2600a93de5e80c2f66625b0626378b3f45004fcf4c9c8",
+    image: "https://plus.unsplash.com/premium_photo-1661284886711-4eaee4fa7771?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -57,19 +57,19 @@ const ServiceSection: React.FC = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-md"
+            className="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col"
           >
             <img
               src={service.image}
               alt={service.title}
-              className="w-28 h-28 mb-4" // Increased width and height
+              className="w-full h-40 object-cover" // Image takes full width and fixed height
             />
-            <h3 className="text-lg font-semibold text-gray-800">
-              {service.title}
-            </h3>
-            <p className="text-gray-600 text-center mt-2">
-              {service.description}
-            </p>
+            <div className="p-4 text-center">
+              <h3 className="text-lg font-semibold text-gray-800">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 mt-2">{service.description}</p>
+            </div>
           </div>
         ))}
       </div>

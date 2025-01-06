@@ -1,3 +1,4 @@
+import MessageFromFounder from "@/app/_components/Message";
 import React from "react";
 
 const AboutUs: React.FC = () => {
@@ -32,6 +33,7 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
       </div>
+      <MessageFromFounder/>
     </section>
   );
 };

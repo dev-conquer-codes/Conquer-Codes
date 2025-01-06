@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header className="flex items-center justify-between px-8 py-4 shadow-md bg-white relative z-50">
       {/* Logo Section */}
-      <div className="text-black font-bold text-xl italic">
+      <div className="text-black font-bold text-2xl italic">
         Conquer Codes
       </div>
 
@@ -62,10 +62,10 @@ const Navbar = () => {
           Home
         </Link>
         <Link href="/aboutUs" className="hover:text-primary transition-colors">
-          AboutUs
+          About 
         </Link>
         <Link href="/services" className="hover:text-primary transition-colors">
-          Our Services
+          Services
         </Link>
         {/* <Link href="/why-us" className="hover:text-primary transition-colors">
           Why us
@@ -77,7 +77,7 @@ const Navbar = () => {
           Career
         </Link> */}
         <Link href="/contact" className="hover:text-primary transition-colors">
-          Contact
+          Contacts
         </Link>
       </nav>
 
@@ -100,14 +100,14 @@ const Navbar = () => {
               className="hover:text-primary transition-colors"
               onClick={toggleMenu}
             >
-              AboutUs
+              About
             </Link>
             <Link
               href="/services"
               className="hover:text-primary transition-colors"
               onClick={toggleMenu}
             >
-              Our Services
+              Services
             </Link>
             {/* <Link
               href="/why-us"
@@ -135,7 +135,7 @@ const Navbar = () => {
               className="hover:text-primary transition-colors"
               onClick={toggleMenu}
             >
-              ContactUs
+              Contacts
             </Link>
           </div>
         </nav>

@@ -19,7 +19,7 @@ export default function Home() {
    <WhatSetsUsApart/>
    <OurPurpose/>
 <MessageFromFounder/>
-   <Footer/>
+   {/* <Footer/> */}
    </>
   );
 }
